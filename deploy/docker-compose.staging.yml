@@ -1,0 +1,11 @@
+services:
+  backend-staging:
+    build: ../backend
+    ports:
+      - "8000:8000"
+    environment:
+      MODEL_NAME: churn-model
+      MODEL_STAGE: Staging
+      # Ces variables doivent être définies dans ton terminal avant de lancer
+      MLFLOW_TRACKING_URI: ${MLFLOW_TRACKING_URI}
+      MLFLOW_TRACKING_TOKEN: ${MLFLOW_TRACKING_TOKEN}
