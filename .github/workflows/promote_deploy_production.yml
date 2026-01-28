@@ -67,5 +67,4 @@ jobs:
           docker push "$DOCKERHUB_USERNAME/churn-backend:production"
           
       - name: Deploy to production (placeholder)
-        run: echo "Deploy step: Imagine running docker-compose pull && up on a prod server."
-        
+        run: echo "Deploy step placeholder"
